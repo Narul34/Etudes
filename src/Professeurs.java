@@ -43,4 +43,9 @@ public class Professeurs {
 		this.etudiants[i] = etudiants[i];
 	}
 
+	@Override
+	public String toString() {
+		return "Professeurs [nom=" + nom + ", prenom=" + prenom + ", matiere=" + matiere + "]";
+	}
+
 }
