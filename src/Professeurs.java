@@ -2,11 +2,13 @@
 public class Professeurs {
 	
 	private String nom, prenom, matiere;
+	private Etudiant[] etudiants;
 	
-	public Professeurs(String nom, String prenom, String matiere){
+	public Professeurs(String nom, String prenom, String matiere, Etudiant[] etudiants){
 		this.nom=nom;
 		this.prenom=prenom;
 		this.matiere=matiere;
+		this.etudiants=etudiants;
 	}
 
 	public String getNom() {
@@ -31,6 +33,14 @@ public class Professeurs {
 
 	public void setMatiere(String matiere) {
 		this.matiere = matiere;
+	}
+
+	public Etudiant[] getEtudiants() {
+		return etudiants;
+	}
+
+	public void setEtudiants(Etudiant[] etudiants, int i) {
+		this.etudiants[i] = etudiants[i];
 	}
 
 }
