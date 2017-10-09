@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Professeurs {
 	
@@ -45,7 +46,9 @@ public class Professeurs {
 
 	@Override
 	public String toString() {
-		return "Professeurs [nom=" + nom + ", prenom=" + prenom + ", matiere=" + matiere + "]";
+		return "Professeurs [nom=" + nom + ", prenom=" + prenom + ", matiere=" + matiere + ", etudiants="
+				+ Arrays.toString(etudiants) + "]";
 	}
+
 
 }

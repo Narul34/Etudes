@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> adri
 public class Main {
 
 	public static void main (String[] args){
@@ -19,15 +16,15 @@ public class Main {
 		etudiants[8]= new Etudiant("toto", "titi","L");
 		etudiants[9]= new Etudiant("toto", "titi","L");
 		
-		Professeur p1 = new Professeur("tarlatata", "turlututu", "Langue", new Etudiant[etudiants.length]);
-		Professeur p2 = new Professeur("tarlatata", "turlututu", "Math", new Etudiant[etudiants.length]);
+		Professeurs p1 = new Professeurs("tarlatata", "turlututu", "Langue", new Etudiant[etudiants.length]);
+		Professeurs p2 = new Professeurs("tarlatata", "turlututu", "Math", new Etudiant[etudiants.length]);
 		
 		for (int i = 0; i < etudiants.length; i++) {
 			if (etudiants[i].getCursus().equals("S")){
-				p2.setEtudiant(etudiants[i], i);
+				p2.setEtudiants(etudiants, i);
 			}
 			if (etudiants[i].getCursus().equals("L")){
-				p1.setEtudiant(etudiants[i], i);
+				p1.setEtudiants(etudiants, i);
 			}
 		}
 		
@@ -35,8 +32,6 @@ public class Main {
 		System.out.println(p2);
 		
 	}
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> adri
+
